@@ -1,0 +1,325 @@
+.buutonAction{
+    padding: 10px;
+    background: green;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+.buutonActionRemove{
+    padding: 10px;
+    background: red;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+.list{
+    height: 100vh;
+    background: #424769;
+    color: #fff;
+    padding: 0px 20px;
+    .innerList{
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .headTimeDate{
+            font-family: digitalLED;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            color: #f10;
+            text-shadow: 0 0 10px #000;
+            font-weight: bold;
+        }
+        .displayField{
+            background: #fff;
+            color: #424769;
+            border-radius: 5px;
+            height: 45vh;
+            padding: 5px;
+            overflow-y: auto;
+            table{
+                text-align: center;
+                tbody{
+                    overflow-y: auto;
+                }
+            }
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            input{
+                padding: 10px;
+                width: 50%;
+            }
+        }
+        .searchInner{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            label{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #fff;
+                color: #424769;
+                // padding: 10px;
+                border-radius: 50px;
+                overflow: hidden;
+                width: 70%;
+                gap: 10px;
+                .icon{
+                    padding: 10px;
+                    font-size: 1.5rem;
+                    // padding-left: 10px;
+                }
+                input{
+                    padding: 10px;
+                    width: 100%;
+                    border: none;
+                    outline: none;
+                }
+            }
+        }
+    }
+}
+.order{
+    height: 100vh;
+    background: #424769;
+    color: #fff;
+    padding: 0px 20px;
+    .innerOrder{
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        .headTimeDate{
+            font-family: digitalLED;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 5px;
+            color: #f10;
+            text-shadow: 0 0 10px #000;
+            font-weight: bold;
+        }
+        .footerText{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            .inputTextField{
+                display: flex;
+                // flex-direction: column;
+                gap: 5px;
+                input{
+                    padding: 10px;
+                    border: 1px solid transparent;
+                    outline: 1px solid transparent;
+                }
+                button{
+                    border: 1px solid transparent;
+                    cursor: pointer;
+                    background: red;
+                    color: #fff;
+                    // outline: 2px solid rgb(82, 82, 215);
+                    outline-offset: 2px solid rgb(82, 82, 215);
+                    outline-style: 2px solid rgb(82, 82, 215);
+                }
+            }
+            .innerTotal{
+                display: flex;
+                flex-direction: column;
+                font-size: 1.5rem;
+            }
+        }
+        .displayField{
+            width: 100%;
+            height: 65vh;
+            background: #fff;
+            color: #424769;
+            border-radius: 5px;
+            overflow-y: auto;
+            table{
+                thead{
+                    text-align: start;
+                }
+                tbody{
+                    text-align: center;
+                    
+                }
+            }
+        }
+        .inputField{
+            width: 100%;
+            display: flex;
+            form{
+                width: 100%;
+                display: flex;
+                gap: 5px;
+                input{
+                    border: none;
+                    width: 100%;
+                    padding: 5px;
+                    outline: none;
+                }
+                input:nth-child(2){
+                    width: 20%;
+                }
+                button{
+                    background: #F6B17A;
+                    width: 10%;
+                    border: none;
+
+                }
+            }
+        }
+    }
+}
+.search{
+    height: 100vh;
+    background: #424769;
+    color: #fff;
+    padding: 0px 20px;
+    .innerSearch{
+        padding: 20px 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .headTimeDate{
+            font-family: digitalLED;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            color: #f10;
+            text-shadow: 0 0 10px #000;
+            font-weight: bold;
+
+        }
+        .button{
+            button{
+                padding: 10px;
+                background: #f10;
+                border: none;
+                color: #fff;
+            }
+        }
+        .displayField{
+            width: 100%;
+            height: 60vh;
+            background: #fff;
+            color: #424769;
+            border-radius: 5px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            table{
+                tbody{
+                    text-align: center;
+                }
+            }
+        }
+        .searchText{
+            padding: 10px;
+            // width: 100%;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #424769;
+            border-radius: 50px;
+            input{
+                width: 100%;
+                padding: 5px;
+                border: transparent;
+                outline: transparent;
+            }
+        }
+    }
+}
+.home{
+    // width: 100%;
+    height: 100vh;
+    background: #424769;
+    color: #fff;
+    padding: 0px 20px;
+    .innerHome{
+        padding: 20px 0;
+        .headTimeDate{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding-top: 50px;
+            font-family: digitalLED;
+            font-size: 3.5rem;
+            color: #f10;
+            text-shadow: 0 0 10px #000;
+        }
+        .boxs{
+            margin-top: 20px;
+            padding-left: 10px;
+            .innerBoxs{
+                display: flex;
+                gap: 10px;
+                .box{
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    justify-content: flex-end;
+                    text-align: right;
+                    width: 34%;
+                    height: 200px;
+                    padding: 20px;
+                    border-radius: 10px;
+                    .totalNumber{
+                        font-size: 2.5rem;
+                    }
+                    .prices{
+                        font-weight: bold;
+                        color: aliceblue;
+                        font-size: 1.5rem;
+                    }
+                }
+                .box:nth-child(1){
+                    background: #7077A1;
+                }
+                .box:nth-child(2){
+                    background: #E8C872;
+                }
+                .box:nth-child(3){
+                    background: #F6B17A;
+                }
+            }
+        }
+        .topText{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .logout{
+                padding-right: 10px;
+                font-size: 3.5rem;
+            }
+            .innerTopText{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                padding-left: 10px;
+                img{
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+                .texts{
+                    .nameText{
+                        height: max-content;
+                        font-size: 3rem;
+                    }
+                }
+            }
+        }
+    }
+}

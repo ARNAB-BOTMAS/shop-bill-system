@@ -1,0 +1,39 @@
+.welcome{
+    background: url(https://images.pexels.com/photos/1850600/pexels-photo-1850600.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) no-repeat center/cover;
+    color: azure;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .innerWelcome{
+        display: flex;
+        width: 50%;
+        height: 150px;
+        background: #1f1414a2;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid azure;
+        border-radius: 10px;
+        gap: 20px;
+        .headertext{
+            font-size: 3rem;
+        }
+        .buttonContainer{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            button{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100px;
+                padding: 10px;
+                border-radius: 50px;
+                border: 2px solid transparent;
+            }
+        }
+    }
+}

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A4 Size Page</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #2f2e2e;
+        }
+        .page {
+            padding: 0;
+            width: 21cm;
+            margin: 0 auto;
+            background-color: #fff;
+        }
+        .innerPage{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header, footer, main {
+            width: 100%;
+            background-color: #fff;
+        }
+        main{
+            width: 90%;
+            height: 20cm;
+            display: flex;
+            flex-direction: column;
+        }
+        .innerMain{
+            display: flex;
+            justify-content: center;
+            height: 19cm;
+        }
+        .totalFooter{
+            display: flex;
+            width: 100%;
+            border: 1px solid #aaa;
+        }
+        .innterFooterT{
+            text-align: right;
+            width: 79.5%;
+            color: red;
+            font-size: 1.5rem;
+        }
+        .innterFooterN{
+            width: 20%;
+            color: red;
+            font-size: 1.5rem;
+        }
+        .sl{
+            width: 10%;
+            text-align: center;
+            border: 1px solid #aaa;
+        }
+        .productName{
+            width: 30%;
+            text-align: center;
+            border: 1px solid #aaa;
+
+        }
+        .productId{
+            width: 40%;
+            text-align: center;
+            border: 1px solid #aaa;
+
+        }
+        .price{
+            width: 20%;
+            text-align: center;
+            border: 1px solid #aaa;
+
+        }
+        .qnt{
+            width: 10%;
+            text-align: center;
+            border: 1px solid #aaa;
+
+        }
+        .thead{
+            background: #aaa;
+        }
+        header {
+            padding: 10px 0;
+            height: 4.5cm;
+            text-align: center;
+        }
+        footer {
+            height: 4.5cm;
+            text-align: center;
+        }
+        .innerHeader{
+            width: 100%;
+            flex-direction: column;
+            height: 4.5cm;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+        }
+        .innerFooter{
+            width: 100%;
+            height: 4.5cm;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            flex-direction: column;
+        }
+        svg{
+            display: block;
+            
+        }
+        .headerContent{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo{
+            width: 40%;
+            padding-left: 50px;
+        }
+        img{
+            width: 150px;
+        }
+        .text{
+            width: 60%;
+            text-align: left;
+            padding-right: 50px;
+            margin: 0;
+        }
+        .header1{
+            font-size: 2.5rem;
+        }
+        .header2{
+            font-size: 1.5rem;
+        }
+
+
+
+        @media print{
+            body{
+                margin: 10px !important;
+            }
+            
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="innerPage">
+            <header>
+                <div class="innerHeader">
+                    <svg width="750" height="40">
+                        <rect x="20" y="0" width="200" height="20" fill="#EB5353"/>
+                        <rect x="200" y="0" width="50" height="20" fill="#EB5353" transform="skewX(-30)" />
+    
+                        <rect x="260" y="0" width="250" height="20" fill="#36AE7C" transform="skewX(-30)" />
+    
+                        <rect x="520" y="0" width="50" height="20" fill="#70A1D7" transform="skewX(-30)" />
+                        <rect x="530" y="0" width="200" height="20" fill="#70A1D7"/>
+    
+                    </svg>
+                    <div class="headerContent">
+                        <div class="logo">
+                            <svg>
+                                <image xlink:href="../image/logoTo.svg" height="200" x="20"/>
+                            </svg>
+                        </div>
+                        <div class="text">
+                            <div class="header1">AMAS'S Hotel Stocks</div class="header1">
+                            <div class="header3">Date: </div class="header3">
+                            <div class="header3">Time: </div class="header3">
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <div class="innerMain">
+                    <div class="sl">
+                        <div class="thead">
+                            SL. No.
+                        </div>
+                        <div class="tbody">
+                            <div class="con">1</div>
+                            <div class="con">2</div>
+                        </div>
+                    </div>
+                    <div class="productId">
+                        <div class="thead">
+                            Product Id
+                        </div>
+                        <div class="tbody">
+                            <div class="con">1</div>
+                            <div class="con">2</div>
+                        </div>
+                    </div>
+                    <div class="productName">
+                        <div class="thead">
+                            Product Name
+                        </div>
+                        <div class="tbody">
+                            <div class="con">1</div>
+                            <div class="con">2</div>
+                        </div>
+                    </div>
+                    <div class="qnt">
+                        <div class="thead">
+                            Quantity
+                        </div>
+                        <div class="tbody">
+                            <div class="con">1</div>
+                            <div class="con">2</div>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <div class="thead">
+                            Price
+                        </div>
+                        <div class="tbody">
+                            <div class="con">1</div>
+                            <div class="con">2</div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <div class="innerFooter">
+
+                    <svg width="750" height="40">
+                        <!-- Skewed rectangle -->
+                        <rect x="20" y="0" width="200" height="20" fill="#EB5353"/>
+                        <rect x="200" y="0" width="50" height="20" fill="#EB5353" transform="skewX(-30)" />
+    
+                        <rect x="260" y="0" width="250" height="20" fill="#36AE7C" transform="skewX(-30)" />
+    
+                        <rect x="520" y="0" width="50" height="20" fill="#70A1D7" transform="skewX(-30)" />
+                        <rect x="530" y="0" width="200" height="20" fill="#70A1D7"/>
+    
+                    </svg>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+</body>
+</html>

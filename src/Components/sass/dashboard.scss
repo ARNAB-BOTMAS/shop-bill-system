@@ -1,0 +1,104 @@
+.dashboardContainer{
+    display: flex;
+    // flex-wrap: wrap;
+    .loading{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background: #42476992;
+    }
+    .innerDashboard{
+        display: flex;
+        // flex-wrap: wrap;
+        width: 100%;
+        height: 100vh;
+        // justify-content: space-around;
+        .functionWindow{
+            width: 100%;
+        }
+
+        .navbar{
+            width: 50px;
+            background: #2D3250;
+            transition: width 0.5s;
+            overflow: hidden;
+            // align-items: center;
+            height: 100vh;
+            padding-left: 10px;
+            .openClose{
+                color: #fff;
+                // margin-bottom: 16px;
+                font-size: 1.5rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .open{
+                    opacity: 1;
+                    padding: 10px;
+                    transition: all 0.3s;
+                    cursor: pointer;
+                }
+                .closeopen{
+                    opacity: 0;
+                }
+                .close{
+                    opacity: 1;
+                    padding: 10px;
+                    transition: all 0.3s;
+                    cursor: pointer;
+                }
+                .openclose{
+                    opacity: 0;
+                }
+            }
+            .contentDash{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .innerContentDash{
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    gap: 15px;
+                    color: #fff;
+                    .active{
+                        background: #424769;
+                        color: #fff;
+                        border-bottom-left-radius: 50px;
+                        border-top-left-radius: 50px;
+                    }
+                    .li{
+                        display: flex;
+                        list-style:  none;
+                        transition: all 0.3s ease-out;
+                        cursor: pointer;
+                        user-select: none;
+                        -webkit-user-drag: none;
+                        -webkit-user-select: none;
+                        
+                        .icon{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            // width: 35px;
+                            // background: #aaa;
+                            padding: 10px;
+                            font-size: 1.5em;
+                        }
+                        .text{
+                            padding: 10px;
+                            font-size: 1.5em;
+                        }
+                    }
+                }
+            }
+        }
+        .show{
+            width: 250px;
+        }
+
+    }
+}

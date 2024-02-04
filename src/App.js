@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import Welcome from "./Components/Pages/Welcome";
+import Login from "./Components/Pages/Login";
+import Registration from "./Components/Pages/Registration";
+import Dashboard from "./Components/Pages/Dashboard"; // Assuming Dashboard is located in Main.js
+import { Routes, Route, Navigate } from "react-router-dom";
+import { useContext } from "react";
+import { AuthContext } from "./AuthContext";
 
 function App() {
+  const {currentUser} = useContext(AuthContext);
+  
+  const ProtectedRoute = ({children}) => {
+    if (!currentUser) {
+      return <Navigate to="/"/>;
+    }
+    return children;
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path='/' element={<Welcome />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/register' element={<Registration />} />
+        <Route path='/dashboard' element={
+          <ProtectedRoute>
+            <Dashboard />
+          </ProtectedRoute>
+        } />
+      </Routes>
     </div>
   );
 }
